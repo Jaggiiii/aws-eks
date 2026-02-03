@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "module": "commonjs",
+    "target": "esnext",
+
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+   "exclude": ["prisma", "node_modules"]
+
+}
