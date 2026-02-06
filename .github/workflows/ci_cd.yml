@@ -23,9 +23,14 @@ jobs:
           context: ./backend
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/aws-eks-backend:latest
-      - name: Buildand push frontned image
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
           context: ./frontend
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/aws-eks-frontend:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          
