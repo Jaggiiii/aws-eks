@@ -8,7 +8,7 @@ export default function Signin() {
   const [password, setPassword] = useState("");
 
   async function handleSignin() {
-    const res = await fetch("http://localhost:3000/api/v1/user/signin", {
+    const res = await fetch("/api/v1/user/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

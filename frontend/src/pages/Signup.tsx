@@ -9,7 +9,7 @@ export default function Signup() {
   const [password, setPassword] = useState("");
 
   async function handleSignup() {
-    const res = await fetch("http://localhost:3000/api/v1/user/signup", {
+    const res = await fetch("/api/v1/user/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

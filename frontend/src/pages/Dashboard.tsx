@@ -13,7 +13,7 @@ export default function Dashboard() {
 
   async function fetchBalance() {
     const res = await fetch(
-      "http://localhost:3000/api/v1/account/balance",
+      "/api/v1/account/balance",
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -25,7 +25,7 @@ export default function Dashboard() {
 
   async function fetchUsers(filter: string) {
     const res = await fetch(
-      `http://localhost:3000/api/v1/user/bulk?filter=${filter}`,
+      `api/v1/user/bulk?filter=${filter}`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -36,7 +36,7 @@ export default function Dashboard() {
   }
 
   async function transfer(email: string) {
-    await fetch("http://localhost:3000/api/v1/account/transfer", {
+    await fetch("/api/v1/account/transfer", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
