@@ -24,7 +24,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/aws-eks-backend:latest
       - name: Buildand push frontned image
-        uses: docker/build-push-action
+        uses: docker/build-push-action@v5
         with:
           context: ./frontend
           push: true
