@@ -1,6 +1,6 @@
 ---
 name: Build,push,deploy
-"on":
+on:
   push:
     branches:
       - main
