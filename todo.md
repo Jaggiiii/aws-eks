@@ -19,7 +19,8 @@ Add:
 pull: true
 inside build step.
 
-#  4. Provenance off (faster builds)
+#  4. Provenance off (faster builds) --> Information about how the image was built.
+basically Image build history record.
 Buildx now generates provenance metadata.
 Disable if not needed:
 

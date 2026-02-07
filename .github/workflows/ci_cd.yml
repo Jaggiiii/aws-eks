@@ -31,6 +31,7 @@ jobs:
           pull: true
           push: true
           platforms: linux/amd64,linux/arm64
+          provenance: false
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/aws-eks-backend:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/aws-eks-backend:${{ github.sha }}
@@ -43,6 +44,7 @@ jobs:
           pull: true
           push: true
           platforms: linux/amd64,linux/arm64
+          provenance: false
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/aws-eks-frontend:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/aws-eks-frontend:${{ github.sha }}
