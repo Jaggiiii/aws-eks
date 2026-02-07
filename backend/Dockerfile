@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY . .
 
@@ -27,13 +27,13 @@ RUN npm run build
 # debugging tools
 # gcr.io is the domain used by Google Container Registry, Google’s container image storage service.
 
-FROM node:18-alpine 
+FROM node:20-alpine 
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install --omit=dev
+RUN npm ci --omit=dev
 
 # Copy prisma schema needed for client generation
 COPY prisma ./prisma
