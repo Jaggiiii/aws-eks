@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+concurrency:
+  group: building the latest and canceling the remaining all.
+  cancel-in-progress: true
 jobs:
   build-push-deploy:
     runs-on: ubuntu-latest
