@@ -1,4 +1,4 @@
-FROM node:18-alpine AS jaggisbackend
+FROM node:20-alpine AS jaggisbackend
 
 # image:version-variant
 

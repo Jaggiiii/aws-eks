@@ -1,4 +1,4 @@
-FROM node:18-alpine AS jaggisfrontned
+FROM node:20-alpine AS jaggisfrontned
 
 WORKDIR /app
 
