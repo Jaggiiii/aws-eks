@@ -30,6 +30,26 @@ cache-from: type=gha,scope=backend
 cache-to: type=gha,mode=max,scope=backend
 scope=frontend
 
+What changed with scopes?
+Before (no scope)
+
+You had:
+
+cache-from: type=gha
+cache-to: type=gha,mode=max
+
+Both backend & frontend used same cache bucket.
+So:
+frontend build overwrites backend cache
+backend overwrites frontend cache
+
+Cache becomes messy.
+After adding scopes
+
+Now:
+backend cache → stored separately
+frontend cache → stored separately
+
 # 6.adding testing as well
 
 
