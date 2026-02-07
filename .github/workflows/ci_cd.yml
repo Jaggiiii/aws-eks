@@ -28,6 +28,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./backend
+          pull: true
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
@@ -39,6 +40,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./frontend
+          pull: true
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |

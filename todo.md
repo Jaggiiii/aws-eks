@@ -1,4 +1,7 @@
 
+# add necessary architectures
+
+
 # 1.Add commit-based tagging (very important)
 backend:latest
 backend:9f3ab21
