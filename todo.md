@@ -53,6 +53,36 @@ frontend cache → stored separately
 # 6.adding testing as well
 
 
+1. Checkout code
+2. Install dependencies
+3. Run tests
+4. If tests pass → build image
+5. Push image
+6. Deploy
+
+
+# If tests fail:
+
+Pipeline stops
+Image not pushed
+Deployment not triggered
+
+# updated pipeline 
+Checkout
+Install backend deps
+Run backend tests
+Install frontend deps
+Run frontend tests
+Build backend image
+Build frontend image
+Push images
+
+
+
+# What happens if tests fail?
+GitHub Actions behavior:
+Any step fails → job stops automatically
+
 # Enterprise pipeline    (not needed now)
 
 ❌ security scanners
