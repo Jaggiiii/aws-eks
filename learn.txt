@@ -1,0 +1,155 @@
+1. AWS Fundamentals
+You must understand AWS basics first.
+What is AWS?
+Regions & Availability Zones
+Global vs Regional services
+AWS pricing basics
+Shared responsibility model
+AWS console & CLI
+AWS CLI configuration
+
+2.Identity & Access Management (IAM)
+Very critical for DevOps.
+Learn:
+IAM users
+IAM groups
+IAM roles
+Policies
+Role assumption
+IAM best practices
+Cross-account access
+MFA
+Instance roles
+
+
+Networking (Most Important)
+DevOps engineers must know networking deeply.
+Learn:
+VPC basics
+VPC
+CIDR block
+Subnets
+Public vs private subnet
+Routing
+Route tables
+Internet Gateway
+NAT Gateway
+Security
+Security groups
+NACL
+Connectivity
+VPC peering
+Transit Gateway
+VPN
+Direct Connect
+DNS
+Route53
+Hosted zones
+Records
+Health checks
+Production flow understanding:
+User → DNS → Load Balancer → App → DB
+
+Compute Services
+Running applications.
+EC2
+Instance types
+AMI
+Key pairs
+Security groups
+Auto Scaling Groups
+Launch templates
+Containers
+ECS
+Fargate
+EKS (Most important)
+You must know:
+Deploy containers
+Autoscaling
+Service exposure
+
+5. Storage Services
+S3
+Buckets
+Versioning
+Lifecycle rules
+Static hosting
+Replication
+Encryption
+Policies
+Block storage
+EBS volumes
+Snapshots
+Shared storage
+EFS
+
+6.Databases
+Basic understanding is enough.
+RDS
+Aurora
+DynamoDB
+Backups
+Replication
+
+
+Load Balancing & Scaling
+Application Load Balancer
+Network Load Balancer
+Target groups
+Health checks
+Autoscaling
+
+8. Container Registry
+Store images.
+Amazon ECR
+Image lifecycle policies
+
+9. CI CD
+
+10. Infrastructure as Code
+Critical skill.
+Learn:
+Terraform (must)
+AWS CloudFormation
+CDK (optional)
+You should automate:
+VPC
+EC2
+EKS
+Databases
+
+11. Monitoring & Logging
+Production debugging relies on logs.
+Learn:
+CloudWatch logs
+CloudWatch metrics
+Alarms
+Dashboards
+X-Ray
+Advanced:
+Prometheus
+Grafana
+
+✅ 12. Security Services
+AWS Secrets Manager
+Parameter Store
+KMS encryption
+WAF
+Shield
+GuardDuty
+
+✅ 13. Serverless (Optional but useful)
+Lambda
+API Gateway
+Step Functions
+EventBridge
+
+✅ 14. DevOps Operational Skills
+Production knowledge:
+Rolling updates
+Blue/Green deployment
+Canary deployment
+Disaster recovery
+Backup strategy
+Scaling strategy
+Cost optimization
