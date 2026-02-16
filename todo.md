@@ -1,4 +1,6 @@
 
+https://github.com/techworldwithmurali/aws-zero-to-hero/blob/main/Day-6/README.md
+
 # add necessary architectures
 
 

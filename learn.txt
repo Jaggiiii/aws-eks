@@ -153,3 +153,10 @@ Disaster recovery
 Backup strategy
 Scaling strategy
 Cost optimization
+
+
+
+Topics shown:
+Monitoring, Logging and New Relic
+Prometheus and Grafana
+Monitoring using Prometheus & Grafana (Part 1 & 2)
